@@ -1,5 +1,5 @@
 import React,{ useEffect, useState} from 'react';
-import { List } from 'ui'
+import List from './Components/List';
 
 const api = "https://pokeapi.co/api/v2/pokemon?limit=151"
 
@@ -27,7 +27,7 @@ const App = () => {
   return (
   <>
     <h1>Pokemon list:</h1>
-    <List />
+    <List pokemonList={pokemonList}/>
   </>
   )
 }
