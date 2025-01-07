@@ -1,0 +1,2 @@
+# Question 6: How can you verify the action has been dispatched?
+we can verify an action has been dispatched using Redux DevTools, console logs, Jest with redux-mock-store, redux-logger middleware, or React's useDispatch hook to track or test action dispatches
