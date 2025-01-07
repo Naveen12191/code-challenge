@@ -1,12 +1,13 @@
 import React from 'react';
+import './List.css';
 
 const List=({pokemonList}:{pokemonList:{name: string}[]})=>{
 
     return(
-        <div>
+        <div className='grid-container'>
             {
                 pokemonList?.map((pokemon,index)=>
-                <div key={index}>{pokemon.name}</div>
+                <div key={index} className='grid-item'>{pokemon.name}</div>
                 )
             }
         </div>
